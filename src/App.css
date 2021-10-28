@@ -1,0 +1,28 @@
+.App {
+  background-color:#EAEAEA;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  max-width: 700px;
+}
+
+textarea {
+  resize: none;
+}
+
+.notes {
+  width: 750px;
+}
+
+.notes-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.note {
+  max-width: 300px;
+  max-height: 300px;
+}
