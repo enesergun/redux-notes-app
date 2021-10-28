@@ -1,18 +1,16 @@
 import React from 'react'
 import '../App.css';
-import {useDispatch, useSelector} from 'react-redux'
+import { useSelector} from 'react-redux'
 
 
 function Notes() {
     const items = useSelector((state) => state.notes.items);
-    console.log(items);
-
     return (
         <div className="notes">
             <div className="notes-container">
                 {
                     items.map((item, key) => (
-                        <div key={key} className="note" style={{background: item.color}}>
+                        <div key={key} className="note" style={{background: item.bgcolor, color:item.textcolor}}>
                             {item.note}
                         </div>
                     ))
