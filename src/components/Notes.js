@@ -7,19 +7,18 @@ function Notes() {
     const items = useSelector((state) => state.notes.items);
     const searchValue = useSelector((state) => state.notes.searchValue);
 
-
     let filtered = items;
-
     if (searchValue && searchValue !== "") {
-        const aranacakkelime = searchValue.toLowerCase();
-        if (aranacakkelime && aranacakkelime !== "") {
+        const word = searchValue.toLowerCase();
+        if (word && word !== "") {
         filtered = items.filter((element) =>
-            element.note.toLowerCase().includes(aranacakkelime)
+            element.note.toLowerCase().includes(word)
         );
-        } else {
+        } 
+        else {
         filtered = items;
         }
-    }
+    };
 
     return (
         <div className="notes">
