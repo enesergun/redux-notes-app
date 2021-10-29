@@ -11,6 +11,8 @@ function Form() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!note) return;
+
         dispatch(addNote({note, bgcolor, textcolor}))
 
     setNote('')

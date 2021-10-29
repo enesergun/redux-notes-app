@@ -3,14 +3,26 @@
   margin:0;
 }
 
+/* App.js */
+
 .App {
   background-color:#EAEAEA;
   display: flex;
   justify-content: center;
+  margin: 20px auto;
+}
+
+.App-header {
+  font-family: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 .container {
   max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
+
+/* Form.js */
 form {
   background-color: white;
   width: 714px;  
@@ -34,6 +46,18 @@ span{
   margin-right: 5px;  
 }
 
+.addButton {
+  width: 100px;
+  height: 40px;
+  background-color: #44C767;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Notes.js */
 
 .notes-container {
   display: flex;
@@ -50,12 +74,9 @@ span{
 box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
 }
 
-.addButton {
-  width: 100px;
-  height: 40px;
-  background-color: #44C767;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
+/* Search.js */
+
+
+.search {
+  margin: 30px auto;
 }
